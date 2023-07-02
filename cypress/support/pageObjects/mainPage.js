@@ -22,6 +22,15 @@ class MainPage {
     getMessagePopUp(){
         return cy.get('.mat-simple-snack-bar-content')
     }
+    getAccountBtn(){
+        return cy.get('#navbarAccount')
+    }
+    getLoginBtn(){
+        return cy.get('#navbarLoginButton')
+    }
+    getIntoBasketMessage(){
+        return cy.get('.mat-simple-snack-bar-content')
+    }
 
 
 }

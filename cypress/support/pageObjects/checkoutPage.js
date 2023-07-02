@@ -40,6 +40,22 @@ class Checkout {
     getSubmitBtn() {
         return cy.get('#submitButton')
     }
+//
+    getCityMessage() {
+        return cy.contains('a city')
+    }
+    getAddressMessage() {
+        return cy.contains('an address')
+    }
+    getMobilePhoneMessage() {
+        return cy.contains('-9999999999 format')
+    }
+    getNameMessage() {
+        return cy.contains('provide a name')
+    }
+    getCountryMessage() {
+        return cy.contains('provide a country')
+    }
 
 
 

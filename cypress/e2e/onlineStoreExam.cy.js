@@ -54,7 +54,7 @@ beforeEach('Close pop-ups, Register and login User', () => {
 
 it('Search and buy product ', () => {
   cy.log('Find product')
-  findProduct(product.applePomace)
+  findProduct(product.appleJuice)
   cy.get('.mat-simple-snack-bar-content').should('contain', `into basket.`)
 
   cy.log('Check the product in the shopping cart')

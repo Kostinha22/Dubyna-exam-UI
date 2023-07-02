@@ -15,6 +15,7 @@ class Address {
     getMessagePopUp() {
         return cy.get('.mat-simple-snack-bar-content')
     }
+
 }
 
 export default new Address

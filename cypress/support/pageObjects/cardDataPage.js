@@ -9,10 +9,10 @@ class CardData {
         return cy.get('input[id^="mat-input-"]').eq(2)
     }
 
-    getSelectElement(){
+    getExpireMonth(){
         return  cy.get('select').eq(0).select('1').should('have.value', '1')
     }
-    getSecondSelectElement(){
+    getExpireYear(){
         return cy.get('select').eq(1).select('2080').should('have.value', '2080')
     }
     getSubmitButton(){
@@ -26,6 +26,12 @@ class CardData {
     }
     getMessagePopUp(){
         return cy.get('.mat-simple-snack-bar-content')
+    }
+    getNameMessage(){
+        return cy.contains('provide a name')
+    }
+    getCardMessage(){
+        return cy.contains('your card number')
     }
 
 }
